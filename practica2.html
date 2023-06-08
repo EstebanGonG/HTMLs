@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> </title>
+    </head>
+    <body>
+        <h1>Formularios en HTML</h1> 
+        
+        <form action="mi_servidor" method="POST" target="_blank">
+
+            <fieldset>
+            
+           <legend>Datos Persona:</legend>
+           <label for="nombre">Nombre:</label><br/>
+           <input type="text" id="nombre" name="nombre"
+               placeholder="Escribe tu nombre" required="true"/><br/>
+            
+            <label for="apellido">Apellido:</label><br/> 
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"/><br/>
+            
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"/><br/>
+            
+            <label for="edad">Edad:</label><br/> 
+            <input type="number" id="edad" name="edad"/><br/>
+            
+            <label>Género</label><br/>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femenino">Femenino</label><br/>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label for="masculino">Masculino</label><br/>
+            
+            <label>Género Música Favorita</label><br/> 
+            <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+            <label for="clasica">Clásica</label><br/>
+            <input type="checkbox" id="jazz" name="musica" value="Jazz"/>
+            <label for="jazz">Jazz</label><br/>
+            
+            <label for="autos">Marca Auto favorita:</label><br/> 
+            <select id="autos" name="autos">
+                 <option value="volvo">Volvo</option>
+                 <option value="bmw">BMW</option> 
+                 <option value="audi" selected="true">Audi</option> 
+                </select><br/>
+            
+            <label for="comentario">Comentario:</label><br/>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario
+            </textarea><br/>
+            
+            <br/>
+            <input type="submit" value="Enviar"/>
+         
+         </fieldset>
+            
+    </form>
+
+    <hr>
+        <h2>Preguntas</h2>
+        <p>¿Qué valor debe de ser colocado en el atributo for? se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título</p>
+        <p>¿Cuál es la funcionalidad del atributo required = true? define que es obligatorio llenar ese campo</p>
+        <p>¿En que consiste el método GET y POST? GET: método para obtener soluciones a nuestras peticiones.POST: método que envía datos a un recurso para que los modifiquen.</p>
+        <p>¿Cual es la funcionalidad de fieldset y legend? La etiqueta FIELDSET sirve para agrupar los elementos. LEGEND sirve para nombrar o etiquetar un grupo creado con FIELDSET.</p>
+        <p>¿Qué significan los metódos action, method y target? indican, respectivamente, la ubicación del programa responsable del procesamiento de los datos del formulario y el método usado para enviar la información. El atributo target en form hará que los resultados sean mostrados en una nueva ventana/pestaña.</p>
+
+     
+    </body>
+</html>
